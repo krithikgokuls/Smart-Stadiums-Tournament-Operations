@@ -1,0 +1,6 @@
+{
+  "name": "Smart Stadiums & Tournament Operations",
+  "description": "A full-stack, GenAI-enabled stadium command center and fan companion app that optimizes tournament operations, volunteer dispatching, and multilingual support for the FIFA World Cup 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
