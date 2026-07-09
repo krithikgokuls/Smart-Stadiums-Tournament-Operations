@@ -112,8 +112,12 @@ export const StadiumMap: React.FC<StadiumMapProps> = ({
                 fill={style.fill}
                 stroke={style.stroke}
                 strokeWidth={isSelected ? "3" : "1.5"}
-                className={`transition-all duration-300 cursor-pointer ${style.hover}`}
+                className={`transition-all duration-300 cursor-pointer outline-none focus:stroke-white ${style.hover}`}
                 onClick={() => onSelectZone("zone-a")}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelectZone("zone-a"); } }}
+                tabIndex={0}
+                role="button"
+                aria-label={`${z.name}. Density: ${z.densityStatus}. Select to inspect.`}
               />
             );
           })()}
@@ -129,8 +133,12 @@ export const StadiumMap: React.FC<StadiumMapProps> = ({
                 fill={style.fill}
                 stroke={style.stroke}
                 strokeWidth={isSelected ? "3" : "1.5"}
-                className={`transition-all duration-300 cursor-pointer ${style.hover}`}
+                className={`transition-all duration-300 cursor-pointer outline-none focus:stroke-white ${style.hover}`}
                 onClick={() => onSelectZone("zone-b")}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelectZone("zone-b"); } }}
+                tabIndex={0}
+                role="button"
+                aria-label={`${z.name}. Density: ${z.densityStatus}. Select to inspect.`}
               />
             );
           })()}
@@ -146,8 +154,12 @@ export const StadiumMap: React.FC<StadiumMapProps> = ({
                 fill={style.fill}
                 stroke={style.stroke}
                 strokeWidth={isSelected ? "3" : "1.5"}
-                className={`transition-all duration-300 cursor-pointer ${style.hover}`}
+                className={`transition-all duration-300 cursor-pointer outline-none focus:stroke-white ${style.hover}`}
                 onClick={() => onSelectZone("zone-c")}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelectZone("zone-c"); } }}
+                tabIndex={0}
+                role="button"
+                aria-label={`${z.name}. Density: ${z.densityStatus}. Select to inspect.`}
               />
             );
           })()}
@@ -163,8 +175,12 @@ export const StadiumMap: React.FC<StadiumMapProps> = ({
                 fill={style.fill}
                 stroke={style.stroke}
                 strokeWidth={isSelected ? "3" : "1.5"}
-                className={`transition-all duration-300 cursor-pointer ${style.hover}`}
+                className={`transition-all duration-300 cursor-pointer outline-none focus:stroke-white ${style.hover}`}
                 onClick={() => onSelectZone("zone-d")}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelectZone("zone-d"); } }}
+                tabIndex={0}
+                role="button"
+                aria-label={`${z.name}. Density: ${z.densityStatus}. Select to inspect.`}
               />
             );
           })()}

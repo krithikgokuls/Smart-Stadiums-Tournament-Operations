@@ -1135,6 +1135,7 @@ export default function App() {
                         onChange={(e) => setFanFoodSearch(e.target.value)}
                         placeholder="Search tacos, burgers, gelato, beer..."
                         className="w-full bg-slate-950 border border-slate-800 rounded pl-8 pr-2 py-2 text-white focus:outline-none focus:border-emerald-500"
+                        aria-label="Search food concessions and beverage bars"
                       />
                     </div>
 
@@ -1235,6 +1236,7 @@ export default function App() {
                 value={selectedLanguage}
                 onChange={(e) => setSelectedLanguage(e.target.value)}
                 className="bg-slate-950 border border-white/15 rounded text-[10px] px-1.5 py-1 text-white font-mono focus:outline-none"
+                aria-label="Select copilot chat language translation"
               >
                 {languagesAvailable.map((lang) => (
                   <option key={lang} value={lang}>
@@ -1362,6 +1364,7 @@ export default function App() {
                 }}
                 disabled={isSendingChat}
                 className="w-full bg-white/5 border border-white/10 rounded-lg py-3 pl-3 pr-10 text-xs font-medium focus:outline-none focus:border-blue-500/50"
+                aria-label="Ask Copilot message input"
               />
               <button
                 onClick={() => handleSendChatMessage()}
